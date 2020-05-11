@@ -1,0 +1,716 @@
+
+
+  ProductPageComponent
+    1) should contain the app-product-description element @app-product-description-selector
+
+  Product Page Component HTML
+    2) should contain the app-product-page element @app-product-page-selector
+
+  AppComponent
+    3) should create the product description component @product-description-component-created
+
+  ProductDescriptionComponent
+    4) should have correct CSS styles inside @product-description-component-css1
+
+  ProductDescriptionComponent
+    5) should have CSS that contains an img selector @product-description-component-css2
+
+  ProductDescription
+    6) should have moved the description div out of the product-page component @product-description-html-moved
+
+  ProductDescription
+    7) should use artist name data from the albumInfo property in the HTML template @product-description-html-uses-dynamic-albuminfo-band
+
+  ProductDescription
+    8) should use image url data from the albumInfo property in the HTML template @product-description-html-uses-dynamic-albuminfo-imageurl
+
+  ProductDescription
+    9) should use album name data from the albumInfo property in the HTML template @product-description-html-uses-dynamic-albuminfo-name
+
+  ProductDescription
+    10) should use release date data from the albumInfo property in the HTML template @product-description-html-uses-dynamic-albuminfo-releasedate
+
+  ProductDescription
+    11) should inject a private property named productService in the constructor @product-description-injects-product-service
+
+  ProductDescription
+    12) should call the ProductService's getAlbum() method from ngOnInit() @product-description-ngoninit-calls-getalbum
+    13) should define a class property named albumInfo @product-description-ngoninit-calls-getalbum
+
+  AppModule
+    14) should add the ProductService to the providers array @product-service-added-to-providers-array
+
+  ProductService
+    15) should exist @product-service-exists
+
+  ProductService
+    16) should map the result of get request to json with rxjs map function @product-service-getalbum-method-maps-response-to-json
+
+  ProductService
+    17) should return contents of _albumUrl when getAlbum method called @product-service-getalbum-method-returns-album-json
+
+  ProductService
+    18) should have a private class property named _albumUrl set to the correct value @product-service-has-albumurl-property
+
+  ProductService
+    19) should have a method named getAlbum() that takes one parameter @product-service-has-getalbum-method
+
+  AppModule
+    20) should import the ProductService @product-service-imported-into-app-module
+
+  ProductDescription
+    21) should import the ProductService @product-service-imported-into-product-description
+
+  ProductService
+    22) should import the Http and Response classes @product-service-imports-http-and-response
+
+  ProductService
+    23) should inject a private property named http in the constructor @product-service-injects-http
+
+  Album Interface
+    24) should exist @album-interface-exists
+
+  Album Interface
+    25) should have name property of type string @album-interface-has-four-properties
+    26) should have releaseDate property of type string @album-interface-has-four-properties
+    27) should have coverImage property of type string @album-interface-has-four-properties
+    28) should have tracks property of type Track[] @album-interface-has-four-properties
+
+  ProductDescription
+    29) should import the Album Interface @album-interface-imported-into-product-description
+
+  ProductService
+    30) should import the Album Interface @album-interface-imported-into-product-service
+
+  ProductDescription
+    31) should have an albumInfo property typed to Album @product-description-albuminfo-property-typed-to-album
+
+  ProductService getAlbum Method
+    32) should import Observable from rxjs  @product-service-getalbum-method-returns-typed-observable
+    33) should return an Observable typed to Album @product-service-getalbum-method-returns-typed-observable
+
+  ProductService getAlbum Method
+    34) should type response.json() to Album @product-service-types-getalbum-responsejson-to-album
+
+  Track Interface
+    35) should exist @track-interface-exists
+
+  Track Interface
+    36) should have trackNumber property of type number @track-interface-has-four-properties
+    37) should have trackName property of type string @track-interface-has-four-properties
+    38) should have trackLength property of type string @track-interface-has-four-properties
+    39) should have trackPrice property of type number @track-interface-has-four-properties
+
+  Album Interface
+    40) should import the Track Interface @track-interface-imported-into-album-interface
+
+  ProductTracklisting
+    41) should import the Album Interface @album-interface-imported-into-product-tracklisting
+
+  ProductTracklisting
+    42) should import the ProductService @product-service-imported-into-product-tracklisting
+
+  Project
+    43) should create the product tracklisting component @product-tracklisting-component-created
+
+  ProductTracklistingComponent
+    44) should have CSS that contains a .tracklisting selector @product-tracklisting-component-css1
+    45) should have CSS with a rule setting the font-size to 16px and the padding-top to 10px on the .tracklisting selector @product-tracklisting-component-css1
+
+  ProductTracklistingComponent
+    46) should have CSS that contains a ul selector @product-tracklisting-component-css2
+    47) should have CSS with a rule setting the list-style-type to none on the ul selector @product-tracklisting-component-css2
+
+  ProductTracklistingComponent
+    48) should have CSS that contains an li selector @product-tracklisting-component-css3
+    49) should have CSS with a rule setting the display to block and the line-height to 30px on the li selector @product-tracklisting-component-css3
+
+  ProductTracklistingComponent
+    50) should have CSS that contains a button selector @product-tracklisting-component-css4
+    51) should have CSS with a rule setting the line-height to 1 on the button selector @product-tracklisting-component-css4
+
+  ProductTracklisting
+    52) should have a class property named albumInfo of type Album @product-tracklisting-has-albuminfo-property
+
+  ProductPage
+    53) should have moved the tracklisting div out of the product-page component @product-tracklisting-html-moved
+
+  ProductTracklisting
+    54) should contain the app-product-tracklisting element @product-tracklisting-html-moved
+
+  ProductTracklisting
+    55) should use ngFor to enumerate through each track in an li tag @product-tracklisting-html-uses-ngfor-to-enumerate-tracks
+
+  ProductTracklisting
+    56) should use data from the albumInfo.tracks property in the HTML template @product-tracklisting-html-uses-track-object-data
+
+  ProductTracklisting
+    57) should inject a private property named productService in the constructor @product-tracklisting-injects-product-service
+
+  ProductTracklisting
+    58) should call the ProductService's getAlbum() method from ngOnInit() @product-tracklisting-ngoninit-calls-getalbum
+    59) should define a class property named albumInfo @product-tracklisting-ngoninit-calls-getalbum
+
+  AppComponent
+    60) should contain the app-product-list element @app-product-list-selector
+
+  Product Interface
+    61) should exist @product-interface-exists
+
+  Product Interface
+    62) should have an id property of type number @product-interface-has-three-properties
+    63) should have an artistName property of type string @product-interface-has-three-properties
+    64) should have an albumName property of type string @product-interface-has-three-properties
+
+  ProductList
+    65) should import the Product Interface @product-interface-imported-into-product-list
+
+  ProductService
+    66) should import the Product Interface @product-interface-imported-into-product-service
+
+  Project
+    67) should create the product list component @product-list-component-created
+
+  ProductList
+    68) should have a class property named products of type Product[] @product-list-has-products-property
+
+  ProductList
+    69) should use ngFor to enumerate through each product in an li tag @product-list-html-uses-ngfor-to-enumerate-products
+
+  ProductList
+    70) should inject a private property named productService in the constructor @product-list-injects-product-service
+
+  ProductList
+    71) should call the ProductService's getProducts() method from ngOnInit() @product-list-ngoninit-calls-getProducts
+    72) should define a class property named products @product-list-ngoninit-calls-getProducts
+
+  ProductList
+    73) should have an li element that contains the album name @product-list-ul-contains-li-with-albumnames
+
+  ProductService
+    74) should map the result of get request to json with rxjs map function @product-service-getproducts-method-maps-response-to-json
+
+  ProductService
+    75) should return contents of _productsUrl when getProducts() method called @product-service-getproducts-method-returns-products-json
+
+  ProductService getProducts Method
+    76) should return an Observable typed to Product[] @product-service-getproducts-method-returns-typed-observable
+    77) should map response json to Product[] @product-service-getproducts-method-returns-typed-observable
+
+  ProductService
+    78) should have a method named getProducts() that takes no parameters @product-service-has-getproducts-method
+
+  ProductService
+    79) should have a private class property named _productsUrl set to the correct value @product-service-has-productsurl-property
+
+  ProductList
+    80) should import the ProductService @product-service-imported-into-product-list
+
+  AppComponent
+    81) should only contain a single tag named router-outlet @app-component-html-uses-router-outlet
+
+  AppModule
+    82) should have a const array named appRoutes where index 2 contains an object with the correct keys and values @app-module-approutes-array-contains-correct-default-route
+
+  AppModule
+    83) should have a const array named appRoutes where index 0 contains an object with the correct keys and values @app-module-approutes-array-contains-correct-object1
+
+  AppModule
+    84) should have a const array named appRoutes where index 1 contains an object with the correct keys and values @app-module-approutes-array-contains-correct-object2
+
+  AppModule
+    85) should have a const array named appRoutes of type Routes @app-module-defines-approutes-array
+
+  AppModule
+    86) should import the RouterModule and Routes classes @app-module-imports-routermodule
+
+  AppModule
+    87) should add the appRoutes to the NgModule imports section @app-module-ngmodule-imports-approutes
+
+  ProductListComponent
+    88) should have anchor elements that have a routerLink attribute with the correct values @product-list-anchor-tags-have-routerlink-attribute
+
+  ProductListComponent
+    89) should have anchor elements inside of li elements that contain the album name @product-list-li-tags-contain-anchor-tags
+
+
+  0 passing (117ms)
+  89 failing
+
+  1) ProductPageComponent should contain the app-product-description element @app-product-description-selector:
+     AssertionError: It looks like the ProductPageComponent still contains a `div` tag with a class of `description` - have you tried moving it yet?
+      at Context.<anonymous> (src\spec\mocha-specs\part2\app-product-description-selector.spec.js:30:5)
+      at processImmediate (internal/timers.js:439:21)
+
+  2) Product Page Component HTML should contain the app-product-page element @app-product-page-selector:
+     AssertionError: Let's make sure to replace the `<h1></h1>` element for the `<app-product-page></app-product-page>` component.
+      at Context.<anonymous> (src\spec\mocha-specs\part2\app-product-page-selector.spec.js:11:5)
+      at processImmediate (internal/timers.js:439:21)
+
+  3) AppComponent should create the product description component @product-description-component-created:
+     AssertionError: The ProductDescriptionComponent doesn't exist - have you run the `ng` command to generate it yet?
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part2\product-description-component-created.spec.js:6:13)
+      at processImmediate (internal/timers.js:439:21)
+
+  4) ProductDescriptionComponent should have correct CSS styles inside @product-description-component-css1:
+     AssertionError: The src/app/product-description/product-description.component.css file does not exist.
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part2\product-description-component-css1.spec.js:8:44)
+      at processImmediate (internal/timers.js:439:21)
+
+  5) ProductDescriptionComponent should have CSS that contains an img selector @product-description-component-css2:
+     AssertionError: The src/app/product-description/product-description.component.css file does not exist.
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part2\product-description-component-css2.spec.js:8:44)
+      at processImmediate (internal/timers.js:439:21)
+
+  6) ProductDescription should have moved the description div out of the product-page component @product-description-html-moved:
+     AssertionError: The src/app/product-description/product-description.component.html file does not exist.
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part2\product-description-html-moved.spec.js:11:44)
+      at processImmediate (internal/timers.js:439:21)
+
+  7) ProductDescription should use artist name data from the albumInfo property in the HTML template @product-description-html-uses-dynamic-albuminfo-band:
+     AssertionError: The src/app/product-description/product-description.component.html file does not exist.
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part3\product-description-html-uses-dynamic-albuminfo-band.spec.js:8:37)
+      at processImmediate (internal/timers.js:439:21)
+
+  8) ProductDescription should use image url data from the albumInfo property in the HTML template @product-description-html-uses-dynamic-albuminfo-imageurl:
+     AssertionError: The src/app/product-description/product-description.component.html file does not exist.
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part3\product-description-html-uses-dynamic-albuminfo-imageurl.spec.js:8:37)
+      at processImmediate (internal/timers.js:439:21)
+
+  9) ProductDescription should use album name data from the albumInfo property in the HTML template @product-description-html-uses-dynamic-albuminfo-name:
+     AssertionError: The src/app/product-description/product-description.component.html file does not exist.
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part3\product-description-html-uses-dynamic-albuminfo-name.spec.js:8:37)
+      at processImmediate (internal/timers.js:439:21)
+
+  10) ProductDescription should use release date data from the albumInfo property in the HTML template @product-description-html-uses-dynamic-albuminfo-releasedate:
+     AssertionError: The src/app/product-description/product-description.component.html file does not exist.
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part3\product-description-html-uses-dynamic-albuminfo-releasedate.spec.js:8:37)
+      at processImmediate (internal/timers.js:439:21)
+
+  11) ProductDescription should inject a private property named productService in the constructor @product-description-injects-product-service:
+     AssertionError: ProductDescriptionComponent doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part3\product-description-injects-product-service.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  12) ProductDescription should call the ProductService's getAlbum() method from ngOnInit() @product-description-ngoninit-calls-getalbum:
+     AssertionError: ProductDescriptionComponent doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part3\product-description-ngoninit-calls-getalbum.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  13) ProductDescription should define a class property named albumInfo @product-description-ngoninit-calls-getalbum:
+     AssertionError: ProductDescriptionComponent doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part3\product-description-ngoninit-calls-getalbum.mocha.spec.js:42:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  14) AppModule should add the ProductService to the providers array @product-service-added-to-providers-array:
+     AssertionError: The ProductService hasn't been added to the AppModule's `providers` array yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part3\product-service-added-to-providers-array.mocha.spec.js:14:5)
+      at processImmediate (internal/timers.js:439:21)
+
+  15) ProductService should exist @product-service-exists:
+     AssertionError: The ProductService hasn't been created yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part3\product-service-exists.mocha.spec.js:7:5)
+      at processImmediate (internal/timers.js:439:21)
+
+  16) ProductService should map the result of get request to json with rxjs map function @product-service-getalbum-method-maps-response-to-json:
+     AssertionError: The ProductService hasn't been created yet. - have you run the `ng` command to generate it yet?
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part3\product-service-getalbum-method-maps-response-to-json.spec.js:10:13)
+      at processImmediate (internal/timers.js:439:21)
+
+  17) ProductService should return contents of _albumUrl when getAlbum method called @product-service-getalbum-method-returns-album-json:
+     AssertionError: The ProductService hasn't been created yet. - have you run the `ng` command to generate it yet?
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part3\product-service-getalbum-method-returns-album-json.spec.js:10:13)
+      at processImmediate (internal/timers.js:439:21)
+
+  18) ProductService should have a private class property named _albumUrl set to the correct value @product-service-has-albumurl-property:
+     AssertionError: The ProductService hasn't been created yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part3\product-service-has-albumurl-property.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  19) ProductService should have a method named getAlbum() that takes one parameter @product-service-has-getalbum-method:
+     AssertionError: The ProductService hasn't been created yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part3\product-service-has-getalbum-method.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  20) AppModule should import the ProductService @product-service-imported-into-app-module:
+     AssertionError: The ProductService hasn't been imported into the AppModule yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part3\product-service-imported-into-app-module.mocha.spec.js:14:5)
+      at processImmediate (internal/timers.js:439:21)
+
+  21) ProductDescription should import the ProductService @product-service-imported-into-product-description:
+     AssertionError: The ProductDescription hasn't been created yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part3\product-service-imported-into-product-description.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  22) ProductService should import the Http and Response classes @product-service-imports-http-and-response:
+     AssertionError: The ProductService doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part3\product-service-imports-http-and-response.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  23) ProductService should inject a private property named http in the constructor @product-service-injects-http:
+     AssertionError: The ProductService hasn't been created yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part3\product-service-injects-http.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  24) Album Interface should exist @album-interface-exists:
+     AssertionError: The Album interface hasn't been created yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part4\album-interface-exists.mocha.spec.js:7:5)
+      at processImmediate (internal/timers.js:439:21)
+
+  25) Album Interface should have name property of type string @album-interface-has-four-properties:
+     AssertionError: The Album interface doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part4\album-interface-has-four-properties.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  26) Album Interface should have releaseDate property of type string @album-interface-has-four-properties:
+     AssertionError: The Album interface doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part4\album-interface-has-four-properties.mocha.spec.js:51:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  27) Album Interface should have coverImage property of type string @album-interface-has-four-properties:
+     AssertionError: The Album interface doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part4\album-interface-has-four-properties.mocha.spec.js:91:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  28) Album Interface should have tracks property of type Track[] @album-interface-has-four-properties:
+     AssertionError: The Album interface doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part4\album-interface-has-four-properties.mocha.spec.js:130:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  29) ProductDescription should import the Album Interface @album-interface-imported-into-product-description:
+     AssertionError: ProductDescriptionComponent doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part4\album-interface-imported-into-product-description.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  30) ProductService should import the Album Interface @album-interface-imported-into-product-service:
+     AssertionError: The ProductService hasn't been created yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part4\album-interface-imported-into-product-service.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  31) ProductDescription should have an albumInfo property typed to Album @product-description-albuminfo-property-typed-to-album:
+     AssertionError: ProductDescriptionComponent doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part4\product-description-albuminfo-property-typed-to-album.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  32) ProductService getAlbum Method should import Observable from rxjs  @product-service-getalbum-method-returns-typed-observable:
+     AssertionError: The ProductService hasn't been created yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part4\product-service-getalbum-method-returns-typed-observable.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  33) ProductService getAlbum Method should return an Observable typed to Album @product-service-getalbum-method-returns-typed-observable:
+     AssertionError: The ProductService hasn't been created yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part4\product-service-getalbum-method-returns-typed-observable.mocha.spec.js:22:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  34) ProductService getAlbum Method should type response.json() to Album @product-service-types-getalbum-responsejson-to-album:
+     AssertionError: The ProductService hasn't been created yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part4\product-service-types-getalbum-responsejson-to-album.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  35) Track Interface should exist @track-interface-exists:
+     AssertionError: The Track interface hasn't been created yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part4\track-interface-exists.mocha.spec.js:7:5)
+      at processImmediate (internal/timers.js:439:21)
+
+  36) Track Interface should have trackNumber property of type number @track-interface-has-four-properties:
+     AssertionError: The Track interface doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part4\track-interface-has-four-properties.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  37) Track Interface should have trackName property of type string @track-interface-has-four-properties:
+     AssertionError: The Track interface doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part4\track-interface-has-four-properties.mocha.spec.js:51:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  38) Track Interface should have trackLength property of type string @track-interface-has-four-properties:
+     AssertionError: The Track interface doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part4\track-interface-has-four-properties.mocha.spec.js:91:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  39) Track Interface should have trackPrice property of type number @track-interface-has-four-properties:
+     AssertionError: The Track interface doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part4\track-interface-has-four-properties.mocha.spec.js:130:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  40) Album Interface should import the Track Interface @track-interface-imported-into-album-interface:
+     AssertionError: The Album interface doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part4\track-interface-imported-into-album-interface.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  41) ProductTracklisting should import the Album Interface @album-interface-imported-into-product-tracklisting:
+     AssertionError: ProductTracklistingComponent doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part5\album-interface-imported-into-product-tracklisting.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  42) ProductTracklisting should import the ProductService @product-service-imported-into-product-tracklisting:
+     AssertionError: The ProductTracklistingComponent hasn't been created yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part5\product-service-imported-into-product-tracklisting.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  43) Project should create the product tracklisting component @product-tracklisting-component-created:
+     AssertionError: The ProductTracklistingComponent doesn't exist - have you run the `ng` command to generate it yet?
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part5\product-tracklisting-component-created.spec.js:5:13)
+      at processImmediate (internal/timers.js:439:21)
+
+  44) ProductTracklistingComponent should have CSS that contains a .tracklisting selector @product-tracklisting-component-css1:
+     AssertionError: The ProductTracklistingComponent CSS file doesn't exist - have you run the `ng` command to generate it yet?
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part5\product-tracklisting-component-css1.spec.js:8:13)
+      at processImmediate (internal/timers.js:439:21)
+
+  45) ProductTracklistingComponent should have CSS with a rule setting the font-size to 16px and the padding-top to 10px on the .tracklisting selector @product-tracklisting-component-css1:
+     AssertionError: The src/app/product-tracklisting/product-tracklisting.component.css file does not exist.
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part5\product-tracklisting-component-css1.spec.js:28:45)
+      at processImmediate (internal/timers.js:439:21)
+
+  46) ProductTracklistingComponent should have CSS that contains a ul selector @product-tracklisting-component-css2:
+     AssertionError: The ProductTracklistingComponent CSS file doesn't exist - have you run the `ng` command to generate it yet?
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part5\product-tracklisting-component-css2.spec.js:8:13)
+      at processImmediate (internal/timers.js:439:21)
+
+  47) ProductTracklistingComponent should have CSS with a rule setting the list-style-type to none on the ul selector @product-tracklisting-component-css2:
+     AssertionError: The src/app/product-tracklisting/product-tracklisting.component.css file does not exist.
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part5\product-tracklisting-component-css2.spec.js:37:45)
+      at processImmediate (internal/timers.js:439:21)
+
+  48) ProductTracklistingComponent should have CSS that contains an li selector @product-tracklisting-component-css3:
+     AssertionError: The ProductTracklistingComponent CSS file doesn't exist - have you run the `ng` command to generate it yet?
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part5\product-tracklisting-component-css3.spec.js:8:13)
+      at processImmediate (internal/timers.js:439:21)
+
+  49) ProductTracklistingComponent should have CSS with a rule setting the display to block and the line-height to 30px on the li selector @product-tracklisting-component-css3:
+     AssertionError: The src/app/product-tracklisting/product-tracklisting.component.css file does not exist.
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part5\product-tracklisting-component-css3.spec.js:37:45)
+      at processImmediate (internal/timers.js:439:21)
+
+  50) ProductTracklistingComponent should have CSS that contains a button selector @product-tracklisting-component-css4:
+     AssertionError: The ProductTracklistingComponent CSS file doesn't exist - have you run the `ng` command to generate it yet?
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part5\product-tracklisting-component-css4.spec.js:8:13)
+      at processImmediate (internal/timers.js:439:21)
+
+  51) ProductTracklistingComponent should have CSS with a rule setting the line-height to 1 on the button selector @product-tracklisting-component-css4:
+     AssertionError: The src/app/product-tracklisting/product-tracklisting.component.css file does not exist.
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part5\product-tracklisting-component-css4.spec.js:37:45)
+      at processImmediate (internal/timers.js:439:21)
+
+  52) ProductTracklisting should have a class property named albumInfo of type Album @product-tracklisting-has-albuminfo-property:
+     AssertionError: ProductTracklistingComponent doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part5\product-tracklisting-has-albuminfo-property.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  53) ProductPage should have moved the tracklisting div out of the product-page component @product-tracklisting-html-moved:
+     AssertionError: The ProductTracklistingComponent doesn't exist - have you run the `ng` command to generate it yet?
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part5\product-tracklisting-html-moved.spec.js:29:13)
+      at processImmediate (internal/timers.js:439:21)
+
+  54) ProductTracklisting should contain the app-product-tracklisting element @product-tracklisting-html-moved:
+     AssertionError: The src/app/product-tracklisting/product-tracklisting.component.html file does not exist.
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part5\product-tracklisting-html-moved.spec.js:65:45)
+      at processImmediate (internal/timers.js:439:21)
+
+  55) ProductTracklisting should use ngFor to enumerate through each track in an li tag @product-tracklisting-html-uses-ngfor-to-enumerate-tracks:
+     AssertionError: The src/app/product-tracklisting/product-tracklisting.component.html file does not exist.
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part5\product-tracklisting-html-uses-ngfor-to-enumerate-tracks.spec.js:10:45)
+      at processImmediate (internal/timers.js:439:21)
+
+  56) ProductTracklisting should use data from the albumInfo.tracks property in the HTML template @product-tracklisting-html-uses-track-object-data:
+     AssertionError: The src/app/product-tracklisting/product-tracklisting.component.html file does not exist.
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part5\product-tracklisting-html-uses-track-object-data.spec.js:10:45)
+      at processImmediate (internal/timers.js:439:21)
+
+  57) ProductTracklisting should inject a private property named productService in the constructor @product-tracklisting-injects-product-service:
+     AssertionError: ProductTracklistingComponent doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part5\product-tracklisting-injects-product-service.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  58) ProductTracklisting should call the ProductService's getAlbum() method from ngOnInit() @product-tracklisting-ngoninit-calls-getalbum:
+     AssertionError: ProductTracklistingComponent doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part5\product-tracklisting-ngoninit-calls-getalbum.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  59) ProductTracklisting should define a class property named albumInfo @product-tracklisting-ngoninit-calls-getalbum:
+     AssertionError: ProductTracklistingComponent doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part5\product-tracklisting-ngoninit-calls-getalbum.mocha.spec.js:41:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  60) AppComponent should contain the app-product-list element @app-product-list-selector:
+     AssertionError: We couldn't find the `app-product-list` tag - are you sure you added the right selector to the AppComponent?
+      at Context.<anonymous> (src\spec\mocha-specs\part6\app-product-list-selector.spec.js:16:5)
+      at processImmediate (internal/timers.js:439:21)
+
+  61) Product Interface should exist @product-interface-exists:
+     AssertionError: The Product interface hasn't been created yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part6\product-interface-exists.mocha.spec.js:7:5)
+      at processImmediate (internal/timers.js:439:21)
+
+  62) Product Interface should have an id property of type number @product-interface-has-three-properties:
+     AssertionError: The Product interface doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part6\product-interface-has-three-properties.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  63) Product Interface should have an artistName property of type string @product-interface-has-three-properties:
+     AssertionError: The Product interface doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part6\product-interface-has-three-properties.mocha.spec.js:51:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  64) Product Interface should have an albumName property of type string @product-interface-has-three-properties:
+     AssertionError: The Product interface doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part6\product-interface-has-three-properties.mocha.spec.js:91:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  65) ProductList should import the Product Interface @product-interface-imported-into-product-list:
+     AssertionError: ProductListComponent doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part6\product-interface-imported-into-product-list.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  66) ProductService should import the Product Interface @product-interface-imported-into-product-service:
+     AssertionError: The ProductService hasn't been created yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part6\product-interface-imported-into-product-service.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  67) Project should create the product list component @product-list-component-created:
+     AssertionError: The ProductListComponent doesn't exist - have you run the `ng` command to generate it yet?
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part6\product-list-component-created.spec.js:5:13)
+      at processImmediate (internal/timers.js:439:21)
+
+  68) ProductList should have a class property named products of type Product[] @product-list-has-products-property:
+     AssertionError: ProductListComponent doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part6\product-list-has-products-property.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  69) ProductList should use ngFor to enumerate through each product in an li tag @product-list-html-uses-ngfor-to-enumerate-products:
+     AssertionError: The src/app/product-list/product-list.component.html file does not exist.
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part6\product-list-html-uses-ngfor-to-enumerate-products.spec.js:9:37)
+      at processImmediate (internal/timers.js:439:21)
+
+  70) ProductList should inject a private property named productService in the constructor @product-list-injects-product-service:
+     AssertionError: ProductListComponent doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part6\product-list-injects-product-service.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  71) ProductList should call the ProductService's getProducts() method from ngOnInit() @product-list-ngoninit-calls-getProducts:
+     AssertionError: ProductListComponent doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part6\product-list-ngoninit-calls-getproducts.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  72) ProductList should define a class property named products @product-list-ngoninit-calls-getProducts:
+     AssertionError: ProductListComponent doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part6\product-list-ngoninit-calls-getproducts.mocha.spec.js:42:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  73) ProductList should have an li element that contains the album name @product-list-ul-contains-li-with-albumnames:
+     AssertionError: The src/app/product-list/product-list.component.html file does not exist.
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part6\product-list-ul-contains-li-with-albumnames.spec.js:9:37)
+      at processImmediate (internal/timers.js:439:21)
+
+  74) ProductService should map the result of get request to json with rxjs map function @product-service-getproducts-method-maps-response-to-json:
+     AssertionError: The ProductService hasn't been created yet. - have you run the `ng` command to generate it yet?
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part6\product-service-getproducts-method-maps-response-to-json.spec.js:10:13)
+      at processImmediate (internal/timers.js:439:21)
+
+  75) ProductService should return contents of _productsUrl when getProducts() method called @product-service-getproducts-method-returns-products-json:
+     AssertionError: The ProductService hasn't been created yet. - have you run the `ng` command to generate it yet?
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part6\product-service-getproducts-method-returns-products-json.spec.js:10:13)
+      at processImmediate (internal/timers.js:439:21)
+
+  76) ProductService getProducts Method should return an Observable typed to Product[] @product-service-getproducts-method-returns-typed-observable:
+     AssertionError: The ProductService hasn't been created yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part6\product-service-getproducts-method-returns-typed-observable.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  77) ProductService getProducts Method should map response json to Product[] @product-service-getproducts-method-returns-typed-observable:
+     AssertionError: The ProductService hasn't been created yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part6\product-service-getproducts-method-returns-typed-observable.mocha.spec.js:31:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  78) ProductService should have a method named getProducts() that takes no parameters @product-service-has-getproducts-method:
+     AssertionError: The ProductService hasn't been created yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part6\product-service-has-getproducts-method.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  79) ProductService should have a private class property named _productsUrl set to the correct value @product-service-has-productsurl-property:
+     AssertionError: The ProductService hasn't been created yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part6\product-service-has-productsurl-property.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  80) ProductList should import the ProductService @product-service-imported-into-product-list:
+     AssertionError: ProductListComponent doesn't exist yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part6\product-service-imported-into-product-list.mocha.spec.js:11:7)
+      at processImmediate (internal/timers.js:439:21)
+
+  81) AppComponent should only contain a single tag named router-outlet @app-component-html-uses-router-outlet:
+     AssertionError: There's currently no `router-outlet` tag in the AppComponent HTML file.
+      at Context.<anonymous> (src\spec\mocha-specs\part7\app-component-html-uses-router-outlet.spec.js:22:5)
+      at processImmediate (internal/timers.js:439:21)
+
+  82) AppModule should have a const array named appRoutes where index 2 contains an object with the correct keys and values @app-module-approutes-array-contains-correct-default-route:
+     AssertionError: You haven't added an appRoutes array constant of type `Routes` in the correct place.
+      at Context.<anonymous> (src\spec\mocha-specs\part7\app-module-approutes-array-contains-correct-default-route.mocha.spec.js:26:5)
+      at processImmediate (internal/timers.js:439:21)
+
+  83) AppModule should have a const array named appRoutes where index 0 contains an object with the correct keys and values @app-module-approutes-array-contains-correct-object1:
+     AssertionError: You haven't added an appRoutes array constant of type `Routes` in the correct place.
+      at Context.<anonymous> (src\spec\mocha-specs\part7\app-module-approutes-array-contains-correct-object1.mocha.spec.js:15:5)
+      at processImmediate (internal/timers.js:439:21)
+
+  84) AppModule should have a const array named appRoutes where index 1 contains an object with the correct keys and values @app-module-approutes-array-contains-correct-object2:
+     AssertionError: You haven't added an appRoutes array constant of type `Routes` in the correct place.
+      at Context.<anonymous> (src\spec\mocha-specs\part7\app-module-approutes-array-contains-correct-object2.mocha.spec.js:15:5)
+      at processImmediate (internal/timers.js:439:21)
+
+  85) AppModule should have a const array named appRoutes of type Routes @app-module-defines-approutes-array:
+     AssertionError: There is currently no array of type Routes declared before `@NgModule`.
+      at Context.<anonymous> (src\spec\mocha-specs\part7\app-module-defines-approutes-array.mocha.spec.js:15:5)
+      at processImmediate (internal/timers.js:439:21)
+
+  86) AppModule should import the RouterModule and Routes classes @app-module-imports-routermodule:
+     AssertionError: Nothing from `@angular/router` has been imported into the AppModule yet.
+      at Context.<anonymous> (src\spec\mocha-specs\part7\app-module-imports-routermodule.mocha.spec.js:15:5)
+      at processImmediate (internal/timers.js:439:21)
+
+  87) AppModule should add the appRoutes to the NgModule imports section @app-module-ngmodule-imports-approutes:
+     AssertionError: The `appRoutes` array hasn't been added in the `@NgModule`'s `imports` array.
+      at Context.<anonymous> (src\spec\mocha-specs\part7\app-module-ngmodule-imports-approutes.mocha.spec.js:22:5)
+      at processImmediate (internal/timers.js:439:21)
+
+  88) ProductListComponent should have anchor elements that have a routerLink attribute with the correct values @product-list-anchor-tags-have-routerlink-attribute:
+     AssertionError: The src/app/product-list/product-list.component.html file does not exist.
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part7\product-list-anchor-tags-have-routerlink-attribute.spec.js:9:37)
+      at processImmediate (internal/timers.js:439:21)
+
+  89) ProductListComponent should have anchor elements inside of li elements that contain the album name @product-list-li-tags-contain-anchor-tags:
+     AssertionError: The src/app/product-list/product-list.component.html file does not exist.
+      at Object.readFile (src\spec\mocha-specs\helpers.js:14:5)
+      at Context.<anonymous> (src\spec\mocha-specs\part7\product-list-li-tags-contain-anchor-tags.spec.js:9:37)
+      at processImmediate (internal/timers.js:439:21)
+
+
+
